@@ -1,0 +1,41 @@
+{
+    "name": "wzs/cooladmin",
+    "description": "admin with thinkphp6",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "汪中帅",
+            "email": "wz666s@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "topthink/framework": "^6.0.0",
+        "thans/thinkphp-filesystem-cloud": "^1.0",
+        "topthink/think-migration": "^3.0.2",
+        "topthink/think-captcha": "^3.0",
+        "topthink/think-view": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "wzs\\cooladmin\\": "src"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "wzs\\cooladmin\\Service"
+            ],
+            "config": {
+                "admin": "src/config/admin.php"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
