@@ -2,7 +2,7 @@
     "name": "wzs/cooladmin",
     "description": "admin with thinkphp6",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "0.1",
     "authors": [
         {
             "name": "汪中帅",
@@ -38,5 +38,5 @@
             }
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
